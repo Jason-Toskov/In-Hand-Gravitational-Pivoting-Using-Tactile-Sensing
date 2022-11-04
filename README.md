@@ -2,6 +2,10 @@
 
 Code for training models from the paper In-Hand Gravitational Pivoting Using Tactile Sensing.
 
+OpenReview: [LINK](https://openreview.net/forum?id=NEGjAH7p0fm) 
+
+ArXiv: [LINK](https://arxiv.org/abs/2210.05068)
+
 ## Requirements
 
 - Python 3
@@ -17,7 +21,13 @@ All requirements can be installed using `pip install -r requirements.txt`.
 
 ## Dataset
 
-For anonymous review a random sample of 400 datapoints from the full dataset is included due to data storage limitations. Links to the full dataset will be provided after anonymous review.
+The full dataset can be downloaded from Monash Bridges, linked [here](https://bridges.monash.edu/articles/dataset/Dataset_for_Gravitational_Pivoting/21482841) and displayed below:
+
+<iframe src="https://widgets.figshare.com/articles/21482841/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
+
+After the data has been loaded, ensure it is moved to the same folder as this repo and unzip it using the following command:
+
+`unzip dataset.zip -d training_data/`
 
 ## Training
 
@@ -39,8 +49,14 @@ Testing can be performed on trained models by setting various parameters in `par
 - `model_path: <Saved model path>`
 - `resume_from_checkpoint: True`
 
-## References
+## Citation
 
-- https://stackoverflow.com/a/3114573
-- https://www.geeksforgeeks.org/python-k-middle-elements/
-- https://stackoverflow.com/a/12471272
+If you find our work or dataset useful, please cite us:
+
+```
+@inproceedings{toskovGravitationalPivoting,
+  title={In-Hand Gravitational Pivoting Using Tactile Sensing},
+  author={Toskov, Jason and Newbury, Rhys and Mukadam, Mustafa and Kulić, Dana and Cosgun, Akansel},
+  year={2022},
+}
+```
