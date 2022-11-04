@@ -21,9 +21,7 @@ All requirements can be installed using `pip install -r requirements.txt`.
 
 ## Dataset
 
-The full dataset can be downloaded from Monash Bridges, linked [here](https://bridges.monash.edu/articles/dataset/Dataset_for_Gravitational_Pivoting/21482841) and displayed below:
-
-<iframe src="https://widgets.figshare.com/articles/21482841/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
+The full dataset can be downloaded from Monash Bridges, [linked here](https://bridges.monash.edu/articles/dataset/Dataset_for_Gravitational_Pivoting/21482841).
 
 After the data has been loaded, ensure it is moved to the same folder as this repo and unzip it using the following command:
 
