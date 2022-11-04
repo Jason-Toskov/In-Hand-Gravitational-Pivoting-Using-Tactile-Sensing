@@ -1,0 +1,34 @@
+data_path: ./train_test_split_storage/
+model_path: ./best_model.pt
+plot_path: ./
+
+model_prediction: both # Can be 'position', 'velocity' or 'both'
+model_type: LSTM # Can be 'LSTM' or 'MLP'
+sample: front # Can be 'front', 'center' or 'random'
+
+test_only: false
+resume_from_checkpoint: false
+manual_test_set: true
+train_frac: 0.8
+
+use_wandb: true
+wandb_name: Pivot-Training
+wandb_project: Grav_Pivot
+wandb_run_notes: ''
+
+num_epochs: 100
+
+label_scale_position: 90
+label_scale_velocity: 400
+
+test_batch_size: 1
+train_batch_size: 4
+
+MLP_window: 15
+learning_rate: 0.0005
+weight_decay: 1.0e-06
+dropout: 0.15
+hidden_size: 500
+num_features: 142
+num_layers: 3
+
